@@ -1,5 +1,6 @@
 from Keeper import time_interval
 from random import randint
+from BekaEngine import *
 # Every one second, 100 frames will pass, the game is on 100 FPS
 '''
 Ways of generating a powerup:
@@ -69,6 +70,8 @@ def generatePowerUp(t=10, s=0):  # Switches
     if currentCheck is True:
         print("💃💃💃💃💃💃💃💃💃💃💃💃💃💃 powerup successfully generated 💃💃💃💃💃💃💃💃💃💃💃💃💃💃💃💃💃💃")
         generate = True
+        #g = GameObject()
+        #print(g)
     else:
         generate = False
 

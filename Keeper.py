@@ -199,11 +199,11 @@ def Update():
                    3.8461538461538463)  # Mouse location for detection, x1, x2, y1, y2, aspect ratio
     # ------------------------------------Powerups Generation Part------------------------------------------------------
     """Always importing is bad for optimization, gonna try sending variables in line 9 - 11 in a different way."""
-    #from PowerUps_TestField import generatePowerUp, checkCollectibles
-    #a = generatePowerUp(2, 0)
-    #if a is not None:
-    #    print(a)   # you can add parameters: (time rate for generation = 10, score rate for generation = 0)
-    #    checkCollectibles()
+    from PowerUps_TestField import generatePowerUp, checkCollectibles
+    a = generatePowerUp(2, 0)
+    if a is not False:
+        print(a)   # you can add parameters: (time rate for generation = 10, score rate for generation = 0)
+        #checkCollectibles()
 
     # ------------------------------------------------------------------------------------------------------------------
     glFlush()
